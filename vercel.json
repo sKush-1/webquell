@@ -1,7 +1,7 @@
 {
   "builds": [
     {
-      "src": "html/index.html",
+      "src": "html/**/*",
       "use": "@vercel/static"
     },
     {
@@ -9,10 +9,18 @@
       "use": "@vercel/static"
     }
   ],
-"routes": [
+  "routes": [
     {
       "src": "/assets/(.*)",
       "dest": "/assets/$1"
+    },
+    {
+      "src": "/privacy-policy",
+      "dest": "/html/privacy-policy.html"
+    },
+    {
+      "src": "/terms-and-conditions",
+      "dest": "/html/terms-and-condition.html"
     },
     {
       "src": "/(.*)",
