@@ -472,7 +472,7 @@ mark,
 
 .img-fluid {
   max-width: 100%;
-  height: auto;
+  height: auto; 
 }
 
 .img-thumbnail {
@@ -8574,6 +8574,12 @@ button.bg-dark:focus {
 .mx-auto {
   margin-left: auto !important;
 }
+
+.ml-auto a:hover,
+.mx-auto a:hover {
+  color: #6C55F9;
+}
+
 
 @media (min-width: 576px) {
   .m-sm-0 {
